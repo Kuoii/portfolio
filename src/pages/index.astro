@@ -1,0 +1,33 @@
+---
+import Page from "../components/Page"
+import Navigation from "../components/Navigation"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+		<style>
+			.font-poiret{
+				font-family: "Poiret One", sans-serif;
+  				font-weight: 400;
+  				font-style: normal;
+}
+		</style>
+		<title>Portfolio</title>
+	</head>
+	<body class="flex bg-zinc-200 font-poiret">
+		<div class="mx-auto content-center text-zinc-800 w-[45%]">
+			<Page client:only/>
+		</div>
+		<div class="ml-auto mr-[10%] h-fit">
+			<Navigation/>
+		</div>
+	</body>
+</html>

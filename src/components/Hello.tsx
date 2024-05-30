@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Hello = (props: { name: string }) => {
+const Hello = () => {
     return (
         <div
             id="hello"

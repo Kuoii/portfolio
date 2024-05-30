@@ -28,7 +28,7 @@ const PortfolioItem = () => {
             ],
         },
     ];
-    const handleEvent = (e: MouseEvent<HTMLElement>) => {
+    const handleEvent = (e: MouseEvent) => {
         e.preventDefault();
         console.log("haiii");
     };

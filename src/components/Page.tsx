@@ -30,17 +30,17 @@ const Page = () => {
             );
         });
         inView(".nav-item-animated", (info) => {
-            const items = document.querySelectorAll("#navigation > a");
+            const items =
+                document.querySelectorAll<HTMLElement>("#navigation > a");
             const found = [...items].find(
                 (item) =>
                     info.target.id.toLowerCase() == item.innerText.toLowerCase()
             );
-            console.log(found);
             if (found)
                 items.forEach((item) => item.classList.remove("text-red-500"));
-            found.classList.add("text-red-500");
+            found?.classList.add("text-red-500");
             return () => {
-                found.classList.remove("text-red-500");
+                found?.classList.remove("text-red-500");
             };
         });
     }, []);

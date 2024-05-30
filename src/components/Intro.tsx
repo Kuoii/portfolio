@@ -1,17 +1,19 @@
-import { useState, useEffect } from "react";
-
 const Intro = () => {
     return (
         <div
-            id="intro"
-            className="h-screen drop-shadow-md flex flex-col justify-center"
+            id="introduction"
+            className="h-screen flex flex-col justify-center animated-right nav-item-animated"
         >
-            <h1 className="animate-slide-in-right text-8xl md:text-nowrap">
-                HELLO WORLD
-            </h1>
-            <h2 className="animate-slide-in-right text-6xl m-8">
-                I'm Koře Kořecí
-            </h2>
+            <p className="text-3xl font-medium w-[90vh]">
+                In publishing and graphic design, lorem ipsum is common
+                placeholder text used to demonstrate the graphic elements of a
+                document or visual presentation, such as web pages, typography,
+                and graphical layout. It is a form of "greeking". Even though
+                using "lorem ipsum" often arouses curiosity due to its
+                resemblance to classical Latin, it is not intended to have
+                meaning. Where text is visible in a document, people tend to
+                focus on the textual
+            </p>
         </div>
     );
 };

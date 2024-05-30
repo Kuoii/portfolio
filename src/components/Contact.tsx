@@ -2,7 +2,7 @@ const Contact = () => {
     return (
         <div
             id="contact"
-            className="h-screen flex flex-col justify-center g-green-400"
+            className="h-screen flex flex-col justify-center g-green-400 nav-item-animated"
         >
             <h2 className="text-3xl my-4 font-bold">Napište mi na ICQ</h2>
             <div className="flex justify-end m-6">

@@ -33,15 +33,17 @@ const PortfolioItem = () => {
         console.log("haiii");
     };
     return (
-        <div id="portfolio" className="flex flex-col min-h-screen h-fit">
+        <div
+            id="portfolio"
+            className="flex flex-col min-h-screen h-fit nav-item-animated"
+        >
             {projects.map((x, index) => (
                 <div
                     className={
                         "flex portfolio-item my-8 w-[90vh]" +
-                        (index % 2 === 0
-                            ? " animate-slide-in-right"
-                            : " animate-slide-in-left")
+                        (index % 2 === 0 ? " animated-right" : " animated-left")
                     }
+                    id={"portfolio-item-" + index}
                 >
                     <div className="">
                         <img

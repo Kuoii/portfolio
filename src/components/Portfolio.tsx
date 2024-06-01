@@ -35,12 +35,12 @@ const PortfolioItem = () => {
     return (
         <div
             id="portfolio"
-            className="flex flex-col min-h-screen h-fit nav-item-animated"
+            className="flex flex-col min-h-screen h-fit nav-item-animated md:w-[80%] lg:w-auto md:mx-auto"
         >
             {projects.map((x, index) => (
                 <div
                     className={
-                        "flex portfolio-item my-8 w-[90vh]" +
+                        "flex portfolio-item my-8 p-6" +
                         (index % 2 === 0 ? " animated-right" : " animated-left")
                     }
                     id={"portfolio-item-" + index}
@@ -49,49 +49,55 @@ const PortfolioItem = () => {
                         <img
                             src={x.image}
                             className={
-                                "w-64 h-44 rounded-md " +
+                                "w-64 h-44 rounded-md mx-auto " +
                                 (index % 2 === 0
-                                    ? "float-left mr-6 "
-                                    : "float-right ml-6")
+                                    ? "md:float-left md:mr-6 "
+                                    : "md:float-right md:ml-6")
                             }
                         />
-                        <h3 className="text-3xl font-semibold">
+                        <h3 className="text-3xl font-semibold mb-3 mt-8 text-center md:text-left md:mt-0 ">
                             {x.name.toUpperCase()}
                         </h3>
-                        <p className="text-xl">
-                            In publishing and graphic design, lorem ipsum is
-                            common placeholder text used to demonstrate the
-                            graphic elements of a document or visual
-                            presentation, such as web pages, typography, and
-                            graphical layout. It is a form of "greeking". Even
-                            though using "lorem ipsum" often arouses curiosity
-                            due to its resemblance to classical Latin, it is not
-                            intended to have meaning. Where text is visible in a
-                            document, people tend to focus on the textual
-                        </p>
-                        <div className="flex mb-2 mt-4">
-                            {x.technologies.map((y) => (
-                                <div
-                                    className="bg-slate-800 text-slate-50 p-2 text-xl m-1 rounded-md"
-                                    //onclick={handleEvent}
-                                >
-                                    {y}
-                                </div>
-                            ))}
-                        </div>
-                        <div className="links flex">
-                            <a href={x.git}>
-                                <img
-                                    src="/github-logo.svg"
-                                    className="w-12 bg-slate-800 m-1 rounded-md p-2"
-                                />
-                            </a>
-                            <a href={x.url}>
-                                <img
-                                    src="/web-logo.svg"
-                                    className="w-12 bg-slate-800 m-1 rounded-md p-2"
-                                />
-                            </a>
+                        <div
+                            className={
+                                index % 2 === 0
+                                    ? " animated-right-delay"
+                                    : " animated-left-delay"
+                            }
+                        >
+                            <p className="text-2xl">
+                                In publishing and graphic design, lorem ipsum is
+                                common placeholder text used to demonstrate the
+                                graphic elements of a document or visual
+                                presentation, such as web pages, typography, and
+                                graphical layout. It is a form of "greeking".
+                                Even though using "lorem ipsum" often arouses
+                                curiosity due to its resemblance to classical
+                                Latin, it is not intended to have meaning. Where
+                                text is visible in a document, people tend to
+                                focus on the textual
+                            </p>
+                            <div className="flex flex-wrap justify-center md:justify-normal mb-4 mt-6">
+                                {x.technologies.map((y) => (
+                                    <div className="bg-slate-800 text-slate-50 p-2 text-xl m-1 rounded-md">
+                                        {y}
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="links flex justify-center md:justify-normal">
+                                <a href={x.git} className="px-2 md:px-0">
+                                    <img
+                                        src="/github-logo.svg"
+                                        className="w-16 lg:w-12 bg-slate-800 m-1 rounded-md p-2"
+                                    />
+                                </a>
+                                <a href={x.url} className="px-2 md:px-0">
+                                    <img
+                                        src="/web-logo.svg"
+                                        className="w-16 lg:w-12 bg-slate-800 m-1 rounded-md p-2"
+                                    />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

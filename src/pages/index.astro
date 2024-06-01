@@ -7,7 +7,7 @@ import Navigation from "../components/Navigation"
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +22,12 @@ import Navigation from "../components/Navigation"
 		</style>
 		<title>Portfolio</title>
 	</head>
-	<body class="flex bg-zinc-200 font-poiret">
-		<div class="mx-auto content-center text-zinc-800 w-[45%]">
-			<Page client:only/>
+	<body class="flex flex-col lg:flex-row-reverse bg-zinc-200 font-poiret">		
+		<div class="ml-auto mr-[15%] h-fit invisible lg:visible">
+			<Navigation client:only/>
 		</div>
-		<div class="ml-auto mr-[10%] h-fit">
-			<Navigation/>
+		<div class="mx-auto content-center text-zinc-800 w-full lg:w-[48%]">
+			<Page client:only/>
 		</div>
 	</body>
 </html>

@@ -26,10 +26,18 @@ const Page = () => {
             animate(
                 info.target,
                 { opacity: [0, 1], transform: ["translateX(-50px)", "none"] },
-                { duration: 1, easing: "ease-in-out", delay: 0.5 }
+                { duration: 1, easing: "ease-in-out", delay: 0.2 }
             );
         });
-        inView(".nav-item-animated", (info) => {
+        inView(".animated-right-delay", (info) => {
+            animate(
+                info.target,
+                { opacity: [0, 1], transform: ["translateX(50px)", "none"] },
+                { duration: 1, easing: "ease-in-out", delay: 0.2 }
+            );
+        });
+        /*inView(".nav-item-animated", (info) => {
+            console.log(info);
             const items =
                 document.querySelectorAll<HTMLElement>("#navigation > a");
             const found = [...items].find(
@@ -37,12 +45,14 @@ const Page = () => {
                     info.target.id.toLowerCase() == item.innerText.toLowerCase()
             );
             if (found)
-                items.forEach((item) => item.classList.remove("text-red-500"));
-            found?.classList.add("text-red-500");
+                items.forEach((item) =>
+                    item.classList.remove("scale-125", "drop-shadow-2xl")
+                );
+            found?.classList.add("scale-125", "drop-shadow-2xl");
             return () => {
-                found?.classList.remove("text-red-500");
+                found?.classList.remove("scale-125", "drop-shadow-2xl");
             };
-        });
+        });*/
     }, []);
     return (
         <>

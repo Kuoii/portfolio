@@ -2,9 +2,9 @@ const Intro = () => {
     return (
         <div
             id="introduction"
-            className="h-screen flex flex-col justify-center animated-right nav-item-animated"
+            className="h-screen flex flex-col justify-center animated-right px-4 sm:px-8 lg:px-6 nav-item-animated"
         >
-            <p className="text-3xl font-medium w-[90vh]">
+            <p className="text-3xl font-medium text-center lg:text-left">
                 In publishing and graphic design, lorem ipsum is common
                 placeholder text used to demonstrate the graphic elements of a
                 document or visual presentation, such as web pages, typography,

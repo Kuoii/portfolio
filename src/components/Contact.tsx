@@ -2,9 +2,11 @@ const Contact = () => {
     return (
         <div
             id="contact"
-            className="h-screen flex flex-col justify-center p-6 md:items-center lg:items-start nav-item-animated"
+            className="h-screen flex flex-col justify-center p-6 md:items-center lg:items-start nav-item-animated "
         >
-            <h2 className="text-3xl my-4 font-bold animated-left">KONTAKT</h2>
+            <h2 className="text-3xl my-4 font-bold animated-left underline underline-offset-4 decoration-2 decoration-emerald-400">
+                KONTAKT
+            </h2>
             <h3 className="text-2xl animated-left-delay">
                 jestli vás moje práce zaujala, neváhejte se ozvat :)
             </h3>

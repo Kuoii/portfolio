@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 32 32" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<path class="st0" d="M25,27H7c-2.2,0-4-1.8-4-4V9c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v14C29,25.2,27.2,27,25,27z"/>
-<polyline class="st0" points="3,10 16,18 29,10 "/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="230.4pt"
+    height="230.4pt"
+    viewBox="0 0 230.4 230.4">
+<defs/>
+<path id="shape0" transform="matrix(7.2 0 0 7.2 21.6 36)" fill="none" stroke="#33cc99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 22L4 22C1.8 22 0 20.2 0 18L0 4C0 1.8 1.8 0 4 0L22 0C24.2 0 26 1.8 26 4L26 18C26 20.2 24.2 22 22 22Z" sodipodi:nodetypes="ccccccccc"/><path id="shape1" transform="matrix(7.2 0 0 7.2 21.6 72)" fill="none" stroke="#33cc99" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M0 0L13 8L26 0" sodipodi:nodetypes="ccc"/>
 </svg>

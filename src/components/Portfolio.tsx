@@ -1,7 +1,7 @@
 const PortfolioItem = () => {
     const projects = [
         {
-            image: "/TodoApp.png",
+            image: "/TodoApp1.png",
             name: "TODO aplikace",
             description:
                 "Moje první fullstack aplikace. Pomocí REST api umí ukládat, upravovat a mazat úkoly, které si k danému kalendářnímu dni uživatel vytvoří.",
@@ -17,7 +17,7 @@ const PortfolioItem = () => {
             ],
         },
         {
-            image: "/fcc.png",
+            image: "/fcc1.png",
             name: "FreeCodeCamp projekty",
             description:
                 "Na FreeCodeCampu postupně doplňuji svoje znalosti, hlavně konkrétně v oblasti JavaScriptu, Front Endových knihoven a Back Endových knihoven. Podle zadání, které jsou součástí kurzů, jsem už vytvořila několik menších projektů, které lze vidět na mém GitHubu.",
@@ -26,12 +26,12 @@ const PortfolioItem = () => {
             technologies: ["Node.js", "JavaScript", "React.js"],
         },
         {
-            image: "/Portfolio.png",
+            image: "/Portfolio1.png",
             name: "Portfolio",
             description:
                 "Stránka, na které se právě nacházíte :) Toto portfolio představuje výběr mých prací, zaměřených na vývoj webových aplikací a grafický design.",
-            git: "https://github.com/Kuoii/HeaderParser-project.git",
-            url: "none",
+            git: "https://github.com/Kuoii/portfolio-website",
+            url: "https://kure-portfolio.pages.dev/",
             technologies: ["Astro", "Typescrip", "React.js", "Tailwind"],
         },
     ];

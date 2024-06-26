@@ -8,7 +8,7 @@ const Intro = () => {
                 Vítejte na mém portfoliu! Zajímám se o vývoj webových aplikací.
                 Chtěla bych Vám zde představit své práce a projekty, vytvořené
                 pomocí různých moderních technologií a frameworků. Níže najdete
-                odkazy na to nezajímavější, co jsem zatím zvládla vytvořit.
+                odkazy na to nejzajímavější, co jsem zatím vytvořila.
             </p>
         </div>
     );

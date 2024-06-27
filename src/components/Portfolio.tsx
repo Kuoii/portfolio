@@ -30,14 +30,14 @@ const PortfolioItem = () => {
             name: "Portfolio",
             description:
                 "Stránka, na které se právě nacházíte :) Toto portfolio představuje výběr mých prací, zaměřených na vývoj webových aplikací a grafický design.",
-            git: "https://github.com/Kuoii/portfolio-website",
-            url: "https://kure-portfolio.pages.dev/",
+            git: "https://github.com/Kuoii/portfolio.git",
+            url: "https://kailova-portfolio.pages.dev/",
             technologies: ["Astro", "Typescrip", "React.js", "Tailwind"],
         },
     ];
     const handleEvent = (e: MouseEvent) => {
         e.preventDefault();
-        console.log("haiii");
+        console.log("...");
     };
     return (
         <div

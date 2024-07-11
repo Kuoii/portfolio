@@ -9,7 +9,7 @@ const PortfolioItem = () => {
             url: "none",
             technologies: [
                 "Node.js",
-                "Better-sqlite3",
+                "SQLite",
                 "JavaScript",
                 "TypeScript",
                 "HTML a CSS",
@@ -32,7 +32,7 @@ const PortfolioItem = () => {
                 "Stránka, na které se právě nacházíte :) Toto portfolio představuje výběr mých prací, zaměřených na vývoj webových aplikací a grafický design.",
             git: "https://github.com/Kuoii/portfolio.git",
             url: "https://kailova-portfolio.pages.dev/",
-            technologies: ["Astro", "Typescrip", "React.js", "Tailwind"],
+            technologies: ["Astro", "Typescript", "React.js", "Tailwind"],
         },
     ];
     const handleEvent = (e: MouseEvent) => {
